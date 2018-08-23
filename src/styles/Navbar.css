@@ -14,7 +14,12 @@
     .Navbar .content .section {
       margin: 16px;
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      padding: 4px 8px 4px 8px;
+      border-radius: 4px; }
+      .Navbar .content .section:hover {
+        color: #4A90E2;
+        background-color: #fff; }
       .Navbar .content .section .section-title {
         font-weight: 400; }
   .Navbar .bar {
