@@ -1,0 +1,18 @@
+.Title {
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+  width: 960px;
+  padding: 0 128px 0 128px;
+  align-items: center;
+  height: 128px;
+
+  .headshot {
+    border-radius: 4px;
+    width: 96px;
+    height: 96px;
+  }
+
+  .title {
+  }
+}

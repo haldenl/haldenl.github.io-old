@@ -1,0 +1,14 @@
+.App {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .App .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .App .navbar-sticky {
+    background: #fff; }

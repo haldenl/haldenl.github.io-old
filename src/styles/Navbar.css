@@ -1,0 +1,25 @@
+.Navbar {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 99; }
+  .Navbar .content {
+    width: 960px;
+    display: flex;
+    flex-direction: row-reverse; }
+    .Navbar .content .section {
+      margin: 16px; }
+      .Navbar .content .section .section-title {
+        font-weight: 400; }
+  .Navbar .bar {
+    position: absolute;
+    height: 3px;
+    background-color: #964366;
+    transform-origin: left top;
+    transform: scaleX(0);
+    bottom: -3px;
+    left: 0;
+    width: 100%; }

@@ -1,0 +1,33 @@
+.QuickLinks {
+  width: 960px;
+  box-sizing: border-box;
+  margin: 0 128px 0 128px;
+  height: 64px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .QuickLinkCard {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    .name {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgb(76, 136, 206);
+    }
+
+    .icon {
+      max-height: 16px;
+      margin-right: 4px;
+    }
+  }
+}

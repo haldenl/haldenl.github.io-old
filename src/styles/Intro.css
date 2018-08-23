@@ -1,0 +1,8 @@
+.Intro {
+  width: 960px;
+  box-sizing: border-box;
+  padding: 0 128px 0 128px;
+  height: 96px; }
+  .Intro .description {
+    line-height: 1.2em;
+    text-align: justify; }
