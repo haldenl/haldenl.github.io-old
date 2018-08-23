@@ -11,7 +11,7 @@ interface NavbarProps {
 }
 
 export default class Navbar extends React.Component<NavbarProps, any> {
-  static Sections = ['publications', 'experience']
+  static Sections = ['Experience','Publications']
 
   render() {
     const sections = Navbar.Sections.map((section: String, i: number) => {

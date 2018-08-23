@@ -16,7 +16,7 @@ export default class Experience extends React.Component {
 
     return (
         <div className="Experience">
-          <ScrollableAnchor id="experience">
+          <ScrollableAnchor id="Experience">
             <h3 className="title">Experience</h3>
           </ScrollableAnchor>
           <div className="cards">

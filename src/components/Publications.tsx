@@ -21,7 +21,7 @@ export default class Publications extends React.Component {
 
     return (
         <div className="Publications">
-          <ScrollableAnchor id="publications">
+          <ScrollableAnchor id="Publications">
             <h3 className="title">Publications</h3>
           </ScrollableAnchor>
           <div className="cards">
@@ -60,7 +60,8 @@ export default class Publications extends React.Component {
       thumbnail: attentionThumbnail,
       links: {
         website: 'https://haldenl.github.io/attention-visualizer/',
-        code: 'https://github.com/haldenl/attention-visualizer'
+        code: 'https://github.com/haldenl/attention-visualizer',
+        pdf: './static/shareables/papers/attention-infovis-2018.pdf'
       },
       width: 402,
       height: 340,

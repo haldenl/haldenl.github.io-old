@@ -49,7 +49,7 @@ module.exports = {
       favicon: "./images/favicon.ico"
     }),
     new CopyWebpackPlugin([
-      { from: './shareables/resume.pdf', to: './static/shareables/resume.pdf' }
+      { from: './shareables/**', to: './static/' }
     ])
   ]
 };
