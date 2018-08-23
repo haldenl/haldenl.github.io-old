@@ -1,8 +1,8 @@
 import * as React from "react";
 import {interpolateLab} from 'd3-interpolate';
-
-import {StickyContainer, Sticky} from 'react-sticky';
-
+import { StickyContainer, Sticky } from 'react-sticky';
+import { configureAnchors } from 'react-scrollable-anchor'
+ 
 import Title from './Title';
 import Intro from './Intro';
 import Navbar from './Navbar';
@@ -22,6 +22,8 @@ export default class App extends React.Component<any, any> {
 
     this.headerColorScale = interpolateLab('#ffffff', '#4A90E2')
     this.headerFontColorScale = interpolateLab('#000', '#fff')
+
+    configureAnchors({offset: -100 })
   }
 
   componentDidMount() {

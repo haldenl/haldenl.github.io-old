@@ -9,11 +9,15 @@
 
   .content {
     width: 960px;
+    // padding: 0 128px 0 128px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
 
     .section {
       margin: 16px;
+      text-decoration: none;
+      color: inherit;
   
       .section-title {
         font-weight: 400;

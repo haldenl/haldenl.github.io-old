@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -46,6 +47,9 @@ module.exports = {
       template: "./src/index.html",
       filename: "./index.html",
       // favicon: "src/favicon.ico"
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: './shareables/resume.pdf', to: './static/shareables/resume.pdf' }
+    ])
   ]
 };

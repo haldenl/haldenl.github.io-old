@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 import '../styles/Publications.css';
 
@@ -20,7 +21,9 @@ export default class Publications extends React.Component {
 
     return (
       <div className="Publications">
-        <h3 className="title">Publications</h3>
+        <ScrollableAnchor id="publications">
+          <h3 className="title">Publications</h3>
+        </ScrollableAnchor>
         <div className="cards">
           {cards}
         </div>

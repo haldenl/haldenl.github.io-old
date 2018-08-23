@@ -8,10 +8,13 @@
   z-index: 99; }
   .Navbar .content {
     width: 960px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse; }
     .Navbar .content .section {
-      margin: 16px; }
+      margin: 16px;
+      text-decoration: none;
+      color: inherit; }
       .Navbar .content .section .section-title {
         font-weight: 400; }
   .Navbar .bar {

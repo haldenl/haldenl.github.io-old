@@ -2,9 +2,10 @@
   width: 960px;
   margin-top: 64px; }
   .Publications .title {
-    margin: 0 20px 0 20px;
+    margin: 32px 20px 8px 20px;
     color: #999999;
-    width: calc(100% - 20px - 20px); }
+    width: calc(100% - 20px - 20px);
+    font-size: 22px; }
   .Publications .cards {
     display: flex;
     flex-direction: row;

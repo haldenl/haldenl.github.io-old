@@ -3,11 +3,12 @@
   margin-bottom: 64px;
 
   .title {
-    margin: 20px 20px 0 20px;
+    margin: 32px 20px 8px 20px;
     color: rgb(153, 153, 153);
     width: calc(100% - 20px - 20px);
-    // border-bottom: 1px solid rgb(153, 153, 153);
+    font-size: 22px;
   }
+  
   .cards {
     display: flex;
     flex-direction: row;

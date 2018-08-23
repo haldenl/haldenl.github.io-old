@@ -16,11 +16,11 @@ export default class Navbar extends React.Component<NavbarProps, any> {
   render() {
     const sections = Navbar.Sections.map((section: String, i: number) => {
       return (
-        <div className="section" key={i}>
+        <a className="section" key={i} href={`#${section}`}>
           <div className="section-title">
             {section}
           </div>
-        </div>
+        </a>
       )
     })
 

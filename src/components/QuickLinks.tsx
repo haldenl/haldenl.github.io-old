@@ -23,7 +23,7 @@ export default class QuickLinks extends React.Component<any, any> {
   static Links: QuickLinkCardProps[] = [
     {
       name: 'Resume',
-      url: '...',
+      url: './static/shareables/resume.pdf',
       icon: resumeIcon
     },
     {
