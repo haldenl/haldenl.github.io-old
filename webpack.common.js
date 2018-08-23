@@ -46,7 +46,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html",
-      // favicon: "src/favicon.ico"
+      favicon: "./images/favicon.ico"
     }),
     new CopyWebpackPlugin([
       { from: './shareables/resume.pdf', to: './static/shareables/resume.pdf' }
