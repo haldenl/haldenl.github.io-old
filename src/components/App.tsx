@@ -23,7 +23,7 @@ export default class App extends React.Component<any, any> {
     this.headerColorScale = interpolateLab('#ffffff', '#4A90E2')
     this.headerFontColorScale = interpolateLab('#000', '#fff')
 
-    configureAnchors({offset: -48 })
+    configureAnchors({offset: -100 })
   }
 
   componentDidMount() {

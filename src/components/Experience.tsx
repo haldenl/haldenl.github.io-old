@@ -15,14 +15,14 @@ export default class Experience extends React.Component {
     })
 
     return (
-      <ScrollableAnchor id="experience">
         <div className="Experience">
+          <ScrollableAnchor id="experience">
             <h3 className="title">Experience</h3>
+          </ScrollableAnchor>
           <div className="cards">
             {cards}
           </div>
         </div>
-      </ScrollableAnchor>
     )
   }
 

@@ -20,14 +20,14 @@ export default class Publications extends React.Component {
     })
 
     return (
-      <ScrollableAnchor id="publications">
         <div className="Publications">
+          <ScrollableAnchor id="publications">
             <h3 className="title">Publications</h3>
+          </ScrollableAnchor>
           <div className="cards">
             {cards}
           </div>
         </div>
-      </ScrollableAnchor>
     )
   }
 
