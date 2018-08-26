@@ -12,3 +12,12 @@
     align-items: center; }
   .App .navbar-sticky {
     background: #fff; }
+  .App .wrapper {
+    margin: 0;
+    padding: 0;
+    width: inherit; }
+  .App .waypoint-fix {
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    padding: 0; }

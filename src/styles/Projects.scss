@@ -1,7 +1,5 @@
-.Publications {
+.Projects {
   width: 960px;
-  margin-top: 64px;
-
 
   .title {
     padding: 32px 20px 8px 20px;
@@ -15,8 +13,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 
-    .PublicationCard {
+
+    .ProjectCard {
       position: relative;
       margin: 11px;
 
@@ -46,23 +46,19 @@
         }
       }
 
+      .gif {
+        border-radius: 8px 8px 0 0;
+        // border-bottom: 1px solid rgb(218, 218, 218);
+      }
+
       .main {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
-        height: calc(100% - 48px);
-
-        .thumbnail-box {
-          height: 100%;
-          width: 33%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
 
         .content {
           height: 100%;
-          width: 67%;
+          width: 100%;
           padding: 16px;
           box-sizing: border-box;
           display: flex;
@@ -76,7 +72,7 @@
             margin-bottom: 8px;
           }
 
-          .paper-title {
+          .subtitle {
             font-weight: 400;
             font-size: 13px;
             margin-bottom: 16px;
@@ -89,27 +85,25 @@
             margin-bottom: 4px;
           }
 
-          .conference {
-            font-weight: 400;
-            font-size: 13px;
-            margin-bottom: 4px;      
-          }
-
           .separator {
             font-weight: 300;
           }
 
           .award {
             color: rgb(247, 78, 115);
+            font-style: normal;
+            font-weight: 400;
           }
 
-          .authors {
-            font-size: 13px;
-            margin-bottom: 16px;
-          }
 
           .tidbit {
             font-size: 13px;
+            margin-bottom: 16px
+          }
+
+          .technologies {
+            font-size: 13px;
+            font-style: italic;
           }
         }
       }

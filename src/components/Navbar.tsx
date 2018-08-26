@@ -4,19 +4,35 @@ import * as classNames from 'classnames';
 import '../styles/Navbar.css';
 
 interface NavbarProps {
+  currentSection: string;
   style: any;
   isSticky: boolean;
   backgroundColor: string;
   progressWidth: number;
+  backgroundPoint: number;
 }
 
 export default class Navbar extends React.Component<NavbarProps, any> {
-  static Sections = ['Experience','Publications']
+  static Sections = ['Experience','Projects', 'Publications']
+  
+  constructor(props: NavbarProps) {
+    super(props)
+
+    this.state = {
+      hold: false
+    }
+  }
 
   render() {
     const sections = Navbar.Sections.map((section: String, i: number) => {
+      const sectionClasses = classNames({
+        'section': true,
+        'current': section === this.props.currentSection
+      })
+
       return (
-        <a className="section" key={i} href={`#${section}`}>
+        <a className={sectionClasses} key={i} href={`#${section}`}
+        >
           <div className="section-title">
             {section}
           </div>

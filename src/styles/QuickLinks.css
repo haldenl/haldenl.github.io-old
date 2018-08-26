@@ -12,13 +12,13 @@
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    color: #4c88ce; }
     .QuickLinks .QuickLinkCard:hover {
       opacity: 0.8; }
     .QuickLinks .QuickLinkCard .name {
       font-size: 13px;
-      font-weight: 700;
-      color: #4c88ce; }
+      font-weight: 700; }
     .QuickLinks .QuickLinkCard .icon {
       max-height: 16px;
       margin-right: 4px; }

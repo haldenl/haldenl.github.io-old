@@ -37,8 +37,10 @@
     "d3-interpolate": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-gif-player": "^0.4.1",
     "react-scrollable-anchor": "^0.6.1",
     "react-sticky": "^6.0.3",
-    "react-typist": "^2.0.4"
+    "react-typist": "^2.0.4",
+    "react-waypoint": "^8.0.3"
   }
 }

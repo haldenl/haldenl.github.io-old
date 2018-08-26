@@ -16,4 +16,17 @@
   .navbar-sticky {
     background: #fff;
   }
+
+  .wrapper {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+  }
+
+  .waypoint-fix {
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

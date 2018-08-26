@@ -2,7 +2,8 @@
   width: 960px;
   margin-top: 64px; }
   .Publications .title {
-    margin: 32px 20px 8px 20px;
+    padding: 32px 20px 8px 20px;
+    margin: 0;
     color: #999999;
     width: calc(100% - 20px - 20px);
     font-size: 22px; }
@@ -24,7 +25,12 @@
           height: 100%; }
         .Publications .cards .PublicationCard.compressed .resources {
           width: 80px;
-          height: 100%; }
+          height: 100%;
+          flex-direction: column;
+          align-content: center;
+          align-items: center; }
+          .Publications .cards .PublicationCard.compressed .resources .resource {
+            height: 64px; }
       .Publications .cards .PublicationCard .main {
         display: flex;
         flex-direction: row;

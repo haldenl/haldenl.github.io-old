@@ -35,7 +35,7 @@ export default class Publications extends React.Component {
     {
       name: "Draco",
       title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco",
-      type: "Full Paper",
+      type: "Conference Paper",
       conference: "IEEE InfoVis 2018",
       award: "Best Paper Award",
       authors: ["Dominik Moritz", "Chenglong Wang", "Greg L. Nelson", "Halden Lin", "Adam M. Smith", "Bill Howe", "Jeffrey Heer"],
@@ -54,7 +54,7 @@ export default class Publications extends React.Component {
       name: "Visualizing Attention",
       title: "Visualizing Attention in Sequence-to-Sequence Summarization Models",
       type: "Poster",
-      conference: "IEEE InfoVis 2018",
+      conference: "IEEE VAST 2018",
       authors: ["Halden Lin", "Tongshuang Wu", "Kanit Wongsuphasawat", "Yejin Choi", "Jeffrey Heer"],
       tidbit: "A tool for visualization the attention mechanism in Natural Language Processing sequence-to-sequence models in spite of long input or output text.",
       thumbnail: attentionThumbnail,
@@ -71,7 +71,7 @@ export default class Publications extends React.Component {
       name: "On Visualization Design + Machine Learning",
       title: "Beyond Heuristics: Learning Visualization Design",
       type: "Workshop Paper",
-      conference: "IEEE InfoVis 2018",
+      conference: "VisGuides at VIS 2018",
       authors: ["Bahador Saket", "Dominik Moritz", "Halden Lin", "Victor Dibia", "Cagatay Demiralp", "Jeffrey Heer"],
       tidbit: null,
       thumbnail: null,
@@ -140,9 +140,9 @@ class PublicationCard extends React.Component<PublicationCardProps, PublicationC
               this.props.authors.map((author, i) => {
                 const authorName = author === Publications.Name ? <b>{author}</b> : author
                 if (i === 0) {
-                  return <span>{authorName}</span>
+                  return <span key={i}>{authorName}</span>
                 } else {
-                  return <span>, {authorName}</span>
+                  return <span key={i}>, {authorName}</span>
                 }
               })
             }</div>

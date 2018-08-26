@@ -9,8 +9,8 @@ import '../styles/QuickLinks.css';
 export default class QuickLinks extends React.Component<any, any> {
   render() {
     const links = QuickLinks.Links
-      .map((linkInfo: QuickLinkCardProps) => {
-        return <QuickLinkCard {...linkInfo}/>
+      .map((linkInfo: QuickLinkCardProps, i: number) => {
+        return <QuickLinkCard {...linkInfo} key={i}/>
       })
 
     return (

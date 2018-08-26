@@ -20,6 +20,9 @@
       .Navbar .content .section:hover {
         color: #4A90E2;
         background-color: #fff; }
+      .Navbar .content .section.current {
+        color: #4A90E2;
+        background-color: #fff; }
       .Navbar .content .section .section-title {
         font-weight: 400; }
   .Navbar .bar {

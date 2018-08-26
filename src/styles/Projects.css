@@ -1,0 +1,98 @@
+.Projects {
+  width: 960px; }
+  .Projects .title {
+    padding: 32px 20px 8px 20px;
+    margin: 0;
+    color: #999999;
+    width: calc(100% - 20px - 20px);
+    font-size: 22px; }
+  .Projects .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .Projects .cards .ProjectCard {
+      position: relative;
+      margin: 11px;
+      border: 1px dotted #c5c5c5;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .Projects .cards .ProjectCard.compressed {
+        flex-direction: row; }
+        .Projects .cards .ProjectCard.compressed .main {
+          height: 100%; }
+        .Projects .cards .ProjectCard.compressed .resources {
+          width: 80px;
+          height: 100%;
+          flex-direction: column;
+          align-content: center;
+          align-items: center; }
+          .Projects .cards .ProjectCard.compressed .resources .resource {
+            height: 64px; }
+      .Projects .cards .ProjectCard .gif {
+        border-radius: 8px 8px 0 0; }
+      .Projects .cards .ProjectCard .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        .Projects .cards .ProjectCard .main .content {
+          height: 100%;
+          width: 100%;
+          padding: 16px;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1; }
+          .Projects .cards .ProjectCard .main .content .name {
+            width: 100%;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px; }
+          .Projects .cards .ProjectCard .main .content .subtitle {
+            font-weight: 400;
+            font-size: 13px;
+            margin-bottom: 16px; }
+          .Projects .cards .ProjectCard .main .content .type {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 13px;
+            margin-bottom: 4px; }
+          .Projects .cards .ProjectCard .main .content .separator {
+            font-weight: 300; }
+          .Projects .cards .ProjectCard .main .content .award {
+            color: #f74e73;
+            font-style: normal;
+            font-weight: 400; }
+          .Projects .cards .ProjectCard .main .content .tidbit {
+            font-size: 13px;
+            margin-bottom: 16px; }
+          .Projects .cards .ProjectCard .main .content .technologies {
+            font-size: 13px;
+            font-style: italic; }
+      .Projects .cards .ProjectCard .resources {
+        height: 56px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .Projects .cards .ProjectCard .resources .resource {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .Projects .cards .ProjectCard .resources .resource:hover .tooltip {
+            opacity: 1; }
+          .Projects .cards .ProjectCard .resources .resource:hover .resource-icon {
+            opacity: 0.8; }
+          .Projects .cards .ProjectCard .resources .resource .tooltip {
+            font-size: 12px;
+            color: #2a5e99;
+            font-family: 'Roboto Mono', monospace;
+            opacity: 0; }
+          .Projects .cards .ProjectCard .resources .resource .resource-icon {
+            margin: 8px 8px 8px 8px;
+            max-height: 16px; }
