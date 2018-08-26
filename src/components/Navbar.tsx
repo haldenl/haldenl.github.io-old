@@ -13,7 +13,7 @@ interface NavbarProps {
 }
 
 export default class Navbar extends React.Component<NavbarProps, any> {
-  static Sections = ['Experience','Projects', 'Publications']
+  static Sections = ['experience','projects', 'publications']
   
   constructor(props: NavbarProps) {
     super(props)

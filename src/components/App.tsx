@@ -22,7 +22,7 @@ export default class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props)
 
-    this.headerColorScale = interpolateLab('#ffffff', '#4A90E2')
+    this.headerColorScale = interpolateLab('#ffffff', '#2E72B5')
     this.headerFontColorScale = interpolateLab('#000', '#fff')
 
     configureAnchors({offset: -51, scrollDuration: 750})
@@ -81,11 +81,11 @@ export default class App extends React.Component<any, any> {
           </div>
         </Waypoint>
         <div className="waypoint-fix"/>
-        <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'Publications'})}>
+        <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'publications'})}>
           <div><Publications /></div>
         </Waypoint>
         <div className="waypoint-fix"/>
-        <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'Projects'})}>
+        <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'projects'})}>
           <div><Projects /></div>
         </Waypoint>
         <div className="waypoint-fix"/>
@@ -93,8 +93,8 @@ export default class App extends React.Component<any, any> {
         <Waypoint
           topOffset={window.innerHeight - 1}
           bottomOffset={0}
-          onEnter={() => this.setState({currentSection: 'Experience'})}
-          onLeave={() => this.setState({currentSection: 'Projects'})}/>
+          onEnter={() => this.setState({currentSection: 'experience'})}
+          onLeave={() => this.setState({currentSection: 'projects'})}/>
       </div>
       </StickyContainer>
     )

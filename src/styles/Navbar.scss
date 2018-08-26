@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   z-index: 99;
+  font-family: 'Noto Sans', sans-serif;
 
   .content {
     width: 960px;
@@ -21,12 +22,12 @@
       border-radius: 4px;
       
       &:hover {
-        color: #4A90E2;
+        color: #2E72B5;
         background-color: #fff;
       }
 
       &.current {
-        color: #4A90E2;
+        color: #2E72B5;
         background-color: #fff;
       }
   

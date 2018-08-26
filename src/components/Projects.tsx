@@ -15,8 +15,8 @@ export default class Projects extends React.Component {
 
     return (
       <div className="Projects">
-        <ScrollableAnchor id="Projects">
-          <h3 className="title">Other Projects</h3>
+        <ScrollableAnchor id="projects">
+          <h3 className="title">other projects</h3>
         </ScrollableAnchor>
         <div className="cards">
           {cards}
@@ -36,7 +36,7 @@ export default class Projects extends React.Component {
         website: 'https://uwdata.github.io/draco-editor/#/editor',
         code: 'https://github.com/uwdata/draco-editor'
       },
-      technologies: "React, Typescript, HTML, CSS",
+      technologies: "React, Vega-Lite, Typescript, HTML, CSS",
       width: 452,
       height: 480
     },

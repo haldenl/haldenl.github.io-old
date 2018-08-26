@@ -4,9 +4,11 @@
   .Experience .title {
     padding: 32px 20px 8px 20px;
     margin: 0;
-    color: #999999;
+    color: #2E72B5;
     width: calc(100% - 20px - 20px);
-    font-size: 22px; }
+    font-size: 22px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400; }
   .Experience .cards {
     display: flex;
     flex-direction: row;
