@@ -75,6 +75,7 @@ export default class App extends React.Component<any, any> {
                     }
                     
                     if (this.refs.quicklinks) {
+                      console.log(this.quickLinksFontColorScale(fontPoint));
                       // @ts-ignore
                       this.refs.quicklinks.style.color = this.quickLinksFontColorScale(fontPoint);
                     }
