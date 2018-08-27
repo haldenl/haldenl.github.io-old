@@ -3,6 +3,8 @@ import * as classNames from 'classnames';
 
 import '../styles/Navbar.css';
 
+import * as logoDark from '../../images/logo_dark.png';
+
 interface NavbarProps {
   currentSection: string;
   style: any;

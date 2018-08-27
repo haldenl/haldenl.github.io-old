@@ -16,13 +16,15 @@ import '../styles/App.css';
 
 export default class App extends React.Component<any, any> {
   headerColorScale: any;
+  quickLinksFontColorScale: any;
   headerFontColorScale: any;
   height: number;
 
   constructor(props: any) {
     super(props)
 
-    this.headerColorScale = interpolateLab('#ffffff', '#2E72B5')
+    this.headerColorScale = interpolateLab('#ffffff', 'rgba(47, 115, 182, 0.95)')
+    this.quickLinksFontColorScale = interpolateLab('#4c88ce', '#fff')
     this.headerFontColorScale = interpolateLab('#000', '#fff')
 
     configureAnchors({offset: -51, scrollDuration: 750})
@@ -48,35 +50,47 @@ export default class App extends React.Component<any, any> {
             <div className="header" ref="header">
               <Title />
               <Intro />
-              <QuickLinks />
-              <div style={{width: "100%"}}>
-                <Sticky topOffset={290}>
-                  {
-                    ({style, isSticky, distanceFromTop, distanceFromBottom}) => {
-                      const backgroundPoint = getHeaderScale(distanceFromTop)
-                      const backgroundColor = this.headerColorScale(backgroundPoint)
-
-                      const fontPoint = getHeaderScale(distanceFromTop * 4)
-                      const fontColor = this.headerFontColorScale(fontPoint)
-
-                      const scrollPoint = getScrollScale(distanceFromTop, this.height ? this.height : 0)
-                      
-                      if (this.refs.header) {
-                        // @ts-ignore
-                        this.refs.header.style.backgroundColor = backgroundColor
-
-                        // @ts-ignore
-                        this.refs.header.style.color = fontColor;
-                      }
-
-                      return (
-                        <Navbar currentSection={this.state.currentSection} style={style} isSticky={isSticky} backgroundColor={backgroundColor} progressWidth={scrollPoint}
-                        backgroundPoint={backgroundPoint}/>
-                      )
-                    }
-                  }
-                </Sticky>
+              <div ref="quicklinks" style={{color: '#4c88ce'}}>
+                <QuickLinks/>
               </div>
+            </div>
+            <div ref="navbarcontainer" style={{width: "100%"}}>
+              <Sticky topOffset={290}>
+                {
+                  ({style, isSticky, distanceFromTop, distanceFromBottom}) => {
+                    const backgroundPoint = getHeaderScale(distanceFromTop)
+                    const backgroundColor = this.headerColorScale(backgroundPoint)
+
+                    const fontPoint = getHeaderScale(distanceFromTop * 4)
+                    const fontColor = this.headerFontColorScale(fontPoint)
+
+                    const scrollPoint = getScrollScale(distanceFromTop, this.height ? this.height : 0)
+                    
+                    if (this.refs.header) {
+                      // @ts-ignore
+                      this.refs.header.style.backgroundColor = backgroundColor
+
+                      // @ts-ignore
+                      this.refs.header.style.color = fontColor;
+                    }
+                    
+                    if (this.refs.quicklinks) {
+                      // @ts-ignore
+                      this.refs.quicklinks.style.color = this.quickLinksFontColorScale(fontPoint);
+                    }
+
+                    if (this.refs.navbarcontainer) {
+                      // @ts-ignore
+                      this.refs.navbarcontainer.style.color = this.headerFontColorScale(fontPoint);
+                    }
+
+                    return (
+                      <Navbar currentSection={this.state.currentSection} style={style} isSticky={isSticky} backgroundColor={backgroundColor} progressWidth={scrollPoint}
+                      backgroundPoint={backgroundPoint}/>
+                    )
+                  }
+                }
+              </Sticky>
             </div>
           </div>
         </Waypoint>

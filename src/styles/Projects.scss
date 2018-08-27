@@ -1,3 +1,5 @@
+@import 'base.scss';
+
 .Projects {
   width: 960px;
 
@@ -22,11 +24,12 @@
       position: relative;
       margin: 11px;
 
-      border: 1px dotted rgb(197, 197, 197);
+      border: 1px solid $border-color;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      
 
       &.compressed {
         flex-direction: row;
@@ -84,7 +87,7 @@
             font-weight: 300;
             font-style: italic;
             font-size: 13px;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
           }
 
           .separator {

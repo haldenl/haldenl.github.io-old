@@ -16,7 +16,7 @@
     .Projects .cards .ProjectCard {
       position: relative;
       margin: 11px;
-      border: 1px dotted #c5c5c5;
+      border: 1px solid #e6e6e6;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
@@ -60,7 +60,7 @@
             font-weight: 300;
             font-style: italic;
             font-size: 13px;
-            margin-bottom: 4px; }
+            margin-bottom: 8px; }
           .Projects .cards .ProjectCard .main .content .separator {
             font-weight: 300; }
           .Projects .cards .ProjectCard .main .content .award {

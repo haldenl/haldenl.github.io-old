@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #4c88ce; }
+    color: inherit;
+    color: rgba(47, 115, 182, 0.95); }
     .QuickLinks .QuickLinkCard:hover {
       opacity: 0.8; }
     .QuickLinks .QuickLinkCard .name {

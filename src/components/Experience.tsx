@@ -34,7 +34,7 @@ export default class Experience extends React.Component {
       role: "Software Engineering Intern",
       team: "Archival",
       time: "Summer 2018",
-      tidbit: "Design and implement tiered lifecycle management for data backed up to the cloud. Functionality developed for Microsoft Azure, but designed to be extensible to other platforms (e.g., Amazon S3, Google Cloud Platform)."
+      tidbit: "Design and implement tiered lifecycle management for data backed up to the cloud."
     },
     {
       companyName: "Google",
@@ -43,7 +43,7 @@ export default class Experience extends React.Component {
       role: "UX Engineering Intern",
       team: "Search",
       time: "Summer 2017",
-      tidbit: "Full-stack design and development of a web application (chrome extension), including accompanying server and API, hosted on Google infrastructure"
+      tidbit: "Full-stack design and development of a web application (chrome extension), including accompanying server and API, hosted on Google infrastructure."
     },
     {
       companyName: "Paul G. Allen School",

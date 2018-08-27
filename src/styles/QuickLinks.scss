@@ -8,13 +8,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
+  
   .QuickLinkCard {
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: rgb(76, 136, 206);
+    color: inherit;
+    color: rgba(47, 115, 182, 0.95);
 
 
     &:hover {

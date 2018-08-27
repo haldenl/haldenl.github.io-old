@@ -1,3 +1,5 @@
+@import 'base.scss';
+
 .Publications {
   width: 960px;
   margin-top: 64px;
@@ -22,7 +24,7 @@
       position: relative;
       margin: 11px;
 
-      border: 1px dotted rgb(197, 197, 197);
+      border: 1px solid $border-color;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
