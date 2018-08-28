@@ -61,7 +61,7 @@ export default class Publications extends React.Component {
       links: {
         website: 'https://haldenl.github.io/attention-visualizer/',
         code: 'https://github.com/haldenl/attention-visualizer',
-        pdf: './static/shareables/papers/attention-infovis-2018.pdf'
+        pdf: './static/shareables/papers/attention-vast-2018.pdf'
       },
       width: 402,
       height: 340,
