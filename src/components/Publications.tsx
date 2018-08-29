@@ -57,7 +57,7 @@ export default class Publications extends React.Component {
       conference: "IEEE VAST 2018",
       authors: ["Halden Lin", "Tongshuang Wu", "Kanit Wongsuphasawat", "Yejin Choi", "Jeffrey Heer"],
       tidbit: "A tool for visualization the attention mechanism in Natural Language Processing sequence-to-sequence models in spite of long input or output text.",
-      thumbnail: attentionThumbnail,
+      thumbnail: './static/gifs/attention.gif',
       links: {
         website: 'https://haldenl.github.io/attention-visualizer/',
         code: 'https://github.com/haldenl/attention-visualizer',
