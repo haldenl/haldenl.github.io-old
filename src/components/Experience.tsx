@@ -28,7 +28,7 @@ export default class Experience extends React.Component {
 
   static ExperienceInfo: ExperienceCardProps[] = [
     {
-      companyName: "Rubrik",
+      companyName: "Rubrik, Inc.",
       companyLogo: rubrikLogo,
       logoSize: 56,
       role: "Software Engineering Intern",
