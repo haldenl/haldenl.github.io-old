@@ -52,7 +52,8 @@ module.exports = {
       { from: './shareables/**', to: './' },
       { from: './papers/**', to: './'},
       { from: './gifs/**', to: './static/' },
-      { from: './CNAME', to: './' }
+      { from: './CNAME', to: './' },
+      { from: './Robots.txt', to: './' }
     ])
   ]
 };
