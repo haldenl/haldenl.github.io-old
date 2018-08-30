@@ -35,14 +35,14 @@ export default class Publications extends React.Component {
     {
       name: "Draco",
       title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco",
-      type: "Conference Paper",
+      type: "Full Paper",
       conference: "IEEE InfoVis 2018",
       award: "Best Paper Award",
       authors: ["Dominik Moritz", "Chenglong Wang", "Greg L. Nelson", "Halden Lin", "Adam M. Smith", "Bill Howe", "Jeffrey Heer"],
       tidbit: "A system for defining a preference-encoded visualization design space, from which recommendations may be generated.",
       thumbnail: dracoThumbnail,
       links: {
-        pdf: 'http://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf',
+        pdf: 'https://idl.cs.washington.edu/files/2019-Draco-InfoVis.pdf',
         website: 'https://uwdata.github.io/draco/',
         code: 'https://github.com/uwdata/draco'
       },
@@ -56,12 +56,12 @@ export default class Publications extends React.Component {
       type: "Poster",
       conference: "IEEE VAST 2018",
       authors: ["Halden Lin", "Tongshuang Wu", "Kanit Wongsuphasawat", "Yejin Choi", "Jeffrey Heer"],
-      tidbit: "A tool for visualization the attention mechanism in Natural Language Processing sequence-to-sequence models in spite of long input or output text.",
+      tidbit: "A tool for visualization the attention mechanism in natural language processing sequence-to-sequence models, in spite of lengthy input or output text.",
       thumbnail: './static/gifs/attention.gif',
       links: {
         website: 'https://haldenl.github.io/attention-visualizer/',
         code: 'https://github.com/haldenl/attention-visualizer',
-        pdf: './static/shareables/papers/attention-vast-2018.pdf'
+        pdf: './papers/2018-vast-attention.pdf'
       },
       width: 402,
       height: 340,

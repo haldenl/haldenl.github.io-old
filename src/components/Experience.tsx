@@ -34,7 +34,7 @@ export default class Experience extends React.Component {
       role: "Software Engineering Intern",
       team: "Archival",
       time: "Summer 2018",
-      tidbit: "Design and implement tiered lifecycle management for data backed up to the cloud."
+      tidbit: "Designed and implemented tiered lifecycle management for data backed up to the cloud. Additionally, extended customer UI to enable access to this feature."
     },
     {
       companyName: "Google",
