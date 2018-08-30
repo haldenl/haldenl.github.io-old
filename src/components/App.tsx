@@ -19,7 +19,10 @@ export default class App extends React.Component<any, any> {
   quickLinksFontColorScale: any;
   headerFontColorScale: any;
   height: number;
+  width: number;
   headerHeight: number;
+
+  static MobileAppWidth = 960;
 
   constructor(props: any) {
     super(props)
@@ -31,7 +34,8 @@ export default class App extends React.Component<any, any> {
     configureAnchors({offset: -51, scrollDuration: 750})
 
     this.state = {
-      currentSection: 'Header'
+      currentSection: 'Header',
+      width: window.innerWidth
     }
 
     this.handleResize = this.handleResize.bind(this);
@@ -65,13 +69,13 @@ export default class App extends React.Component<any, any> {
               <Sticky topOffset={this.headerHeight}>
                 {
                   ({style, isSticky, distanceFromTop, distanceFromBottom}) => {
-                    const backgroundPoint = getHeaderScale(distanceFromTop)
+                    const backgroundPoint = this.getHeaderScale(distanceFromTop)
                     const backgroundColor = this.headerColorScale(backgroundPoint)
 
-                    const fontPoint = getHeaderScale(distanceFromTop * 4)
+                    const fontPoint = this.getHeaderScale(distanceFromTop * 4)
                     const fontColor = this.headerFontColorScale(fontPoint)
 
-                    const scrollPoint = getScrollScale(distanceFromTop, this.height ? this.height : 0)
+                    const scrollPoint = this.getScrollScale(distanceFromTop, this.height ? this.height : 0)
                     
                     if (this.refs.header) {
                       // @ts-ignore
@@ -110,12 +114,20 @@ export default class App extends React.Component<any, any> {
           <div><Projects /></div>
         </Waypoint>
         <div className="waypoint-fix"/>
-        <div><Experience /></div>
-        <Waypoint
-          topOffset={window.innerHeight - 1}
-          bottomOffset={0}
-          onEnter={() => this.setState({currentSection: 'experience'})}
-          onLeave={() => this.setState({currentSection: 'projects'})}/>
+        { this.state.width < App.MobileAppWidth ?
+           <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'experience'})}>
+            <div><Experience /></div>
+          </Waypoint>
+          :
+          <div>
+            <div><Experience /></div>
+            <Waypoint
+              topOffset={window.innerHeight - 1}
+              bottomOffset={0}
+              onEnter={() => this.setState({currentSection: 'experience'})}
+              onLeave={() => this.setState({currentSection: 'projects'})}/>
+          </div>
+        }
       </div>
       </StickyContainer>
     )
@@ -123,23 +135,26 @@ export default class App extends React.Component<any, any> {
 
   handleResize() {
     this.headerHeight = document.getElementById('header').clientHeight;
+    this.height = document.getElementById('app').clientHeight;
+    this.setState({ width: window.innerWidth })
   }
-}
 
-function getHeaderScale(distanceFromTop: number): number {
-  var headerScale = (1 -(290 + distanceFromTop) / 290);
-  if (!headerScale) { return 0 }
-  else if (headerScale < 0) { return 0 }
-  else if (headerScale > 1) { return 1 }
-  else if (headerScale === NaN) { return 0 }
-  else { return headerScale }
-}
+  getScrollScale(distanceFromTop: number, height: number): number {
+    var scrollScale = (-distanceFromTop - this.headerHeight) / (height - window.innerHeight - this.headerHeight);
+    if (!scrollScale) { return 0 }
+    else if (scrollScale < 0) { return 0 }
+    else if (scrollScale > 1) { return 1 }
+    else if (scrollScale === NaN) { return 0 }
+    else { return scrollScale }
+  }
 
-function getScrollScale(distanceFromTop: number, height: number): number {
-  var scrollScale = (-distanceFromTop - 290) / (height - window.innerHeight - 290);
-  if (!scrollScale) { return 0 }
-  else if (scrollScale < 0) { return 0 }
-  else if (scrollScale > 1) { return 1 }
-  else if (scrollScale === NaN) { return 0 }
-  else { return scrollScale }
+  getHeaderScale(distanceFromTop: number): number {
+    var headerScale = (1 -(this.headerHeight + distanceFromTop) / this.headerHeight);
+    if (!headerScale) { return 0 }
+    else if (headerScale < 0) { return 0 }
+    else if (headerScale > 1) { return 1 }
+    else if (headerScale === NaN) { return 0 }
+    else { return headerScale }
+  }
+  
 }
