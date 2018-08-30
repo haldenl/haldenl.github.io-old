@@ -1,7 +1,7 @@
 @import 'base.scss';
 
 .Publications {
-  width: 960px;
+  width: $app-width;
   margin-top: 64px;
 
 
@@ -41,8 +41,6 @@
           width: 80px;
           height: 100%;
           flex-direction: column;
-          align-content: center;
-          align-items: center;
 
           .resource {
             height: 64px;
@@ -62,6 +60,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          .thumbnail {
+            max-width: 33%;
+          }
         }
 
         .content {
@@ -153,6 +155,59 @@
           .resource-icon {
             margin: 8px 8px 8px 8px;
             max-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .Publications {
+    width: $mobile-app-width;
+    padding: $mobile-app-padding;
+
+    .cards {
+      flex-direction: column;
+
+      .PublicationCard {
+        width: $mobile-app-width !important;
+        height: auto !important;
+
+        &.compressed {
+          flex-direction: column;
+
+          .main {
+            height: calc(100% - 56px);
+          }
+  
+          .resources {
+            height: 56px;
+            width: 100%;
+            flex-direction: row;
+  
+            .resource {
+              height: 100%;
+            }
+          }
+        }
+
+        .main {
+          flex-direction: column-reverse;
+
+          .thumbnail-box {
+            height: 33%;
+            width: 100%;
+
+            .thumbnail {
+              max-height: 128px;
+              padding: 16px 0 16px 0;
+            }
+          }
+
+          .content {
+            height: 67%;
+            width: 100%;
           }
         }
       }

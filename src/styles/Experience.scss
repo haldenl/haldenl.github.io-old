@@ -1,7 +1,7 @@
 @import 'base.scss';
 
 .Experience {
-  width: 960px;
+  width: $app-width;
   margin-bottom: 64px;
 
   .title {
@@ -43,9 +43,32 @@
         .text {
           width: 100%;
           box-sizing: border-box;
-          padding: 0 8px 0 8px;
+          padding: 8px;
           font-size: 13px;
           line-height: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .Experience {
+    width: $mobile-app-width;
+    padding: $mobile-app-padding;
+
+    .cards {
+      flex-direction: column;
+
+      .ExperienceCard {
+
+        .card {
+          width: $mobile-app-width !important;
+          height: auto !important;
+
+          .text {
+            padding: 16px;
+          }
         }
       }
     }

@@ -10,3 +10,9 @@
     border-radius: 4px;
     width: 96px;
     height: 96px; }
+
+@media only screen and (max-width: 960px) {
+  .Title {
+    width: calc(100% - 16px - 16px);
+    padding: 0 16px 0 16px;
+    height: auto; } }

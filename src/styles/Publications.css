@@ -28,9 +28,7 @@
         .Publications .cards .PublicationCard.compressed .resources {
           width: 80px;
           height: 100%;
-          flex-direction: column;
-          align-content: center;
-          align-items: center; }
+          flex-direction: column; }
           .Publications .cards .PublicationCard.compressed .resources .resource {
             height: 64px; }
       .Publications .cards .PublicationCard .main {
@@ -44,6 +42,8 @@
           display: flex;
           justify-content: center;
           align-items: center; }
+          .Publications .cards .PublicationCard .main .thumbnail-box .thumbnail {
+            max-width: 33%; }
         .Publications .cards .PublicationCard .main .content {
           height: 100%;
           width: 67%;
@@ -104,3 +104,34 @@
           .Publications .cards .PublicationCard .resources .resource .resource-icon {
             margin: 8px 8px 8px 8px;
             max-height: 16px; }
+
+@media only screen and (max-width: 960px) {
+  .Publications {
+    width: calc(100% - 16px - 16px);
+    padding: 0 16px 0 16px; }
+    .Publications .cards {
+      flex-direction: column; }
+      .Publications .cards .PublicationCard {
+        width: calc(100% - 16px - 16px) !important;
+        height: auto !important; }
+        .Publications .cards .PublicationCard.compressed {
+          flex-direction: column; }
+          .Publications .cards .PublicationCard.compressed .main {
+            height: calc(100% - 56px); }
+          .Publications .cards .PublicationCard.compressed .resources {
+            height: 56px;
+            width: 100%;
+            flex-direction: row; }
+            .Publications .cards .PublicationCard.compressed .resources .resource {
+              height: 100%; }
+        .Publications .cards .PublicationCard .main {
+          flex-direction: column-reverse; }
+          .Publications .cards .PublicationCard .main .thumbnail-box {
+            height: 33%;
+            width: 100%; }
+            .Publications .cards .PublicationCard .main .thumbnail-box .thumbnail {
+              max-height: 128px;
+              padding: 16px 0 16px 0; }
+          .Publications .cards .PublicationCard .main .content {
+            height: 67%;
+            width: 100%; } }

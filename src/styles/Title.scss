@@ -1,9 +1,11 @@
+@import 'base.scss';
+
 .Title {
   display: flex;
   flex-direction: row-reverse;
   box-sizing: border-box;
-  width: 960px;
-  padding: 0 128px 0 128px;
+  width: $app-width;
+  padding: $app-padding;
   align-items: center;
   height: 128px;
 
@@ -14,5 +16,14 @@
   }
 
   .title {
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+  .Title {
+    width: $mobile-app-width;
+    padding: $mobile-app-padding;
+    height: auto;
   }
 }

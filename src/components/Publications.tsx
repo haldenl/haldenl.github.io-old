@@ -151,7 +151,7 @@ class PublicationCard extends React.Component<PublicationCardProps, PublicationC
           {
             this.props.thumbnail ?
               <div className="thumbnail-box">
-                <img className="thumbnail" style={{maxWidth: 120}} src={this.props.thumbnail}/>
+                <img className="thumbnail" src={this.props.thumbnail}/>
               </div>
             : null
           }

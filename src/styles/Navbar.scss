@@ -1,3 +1,5 @@
+@import 'base.scss';
+
 .Navbar {
   width: 100%;
   box-sizing: border-box;
@@ -9,7 +11,7 @@
   font-family: 'Noto Sans', sans-serif;
 
   .content {
-    width: 960px;
+    width: $app-width;
     box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
@@ -46,5 +48,16 @@
     bottom: -3px;
     left: 0;
     width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+  .Navbar {
+
+    .content {
+      width: $mobile-app-width;
+      font-size: 12px;
+    }
   }
 }

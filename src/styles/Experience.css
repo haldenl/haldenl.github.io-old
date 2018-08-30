@@ -32,6 +32,18 @@
       .Experience .cards .ExperienceCard .card .text {
         width: 100%;
         box-sizing: border-box;
-        padding: 0 8px 0 8px;
+        padding: 8px;
         font-size: 13px;
         line-height: 1.3em; }
+
+@media only screen and (max-width: 960px) {
+  .Experience {
+    width: calc(100% - 16px - 16px);
+    padding: 0 16px 0 16px; }
+    .Experience .cards {
+      flex-direction: column; }
+      .Experience .cards .ExperienceCard .card {
+        width: calc(100% - 16px - 16px) !important;
+        height: auto !important; }
+        .Experience .cards .ExperienceCard .card .text {
+          padding: 16px; } }

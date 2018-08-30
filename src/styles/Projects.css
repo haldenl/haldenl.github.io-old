@@ -98,3 +98,30 @@
           .Projects .cards .ProjectCard .resources .resource .resource-icon {
             margin: 8px 8px 8px 8px;
             max-height: 16px; }
+
+@media only screen and (max-width: 960px) {
+  .Projects {
+    width: calc(100% - 16px - 16px);
+    padding: 0 16px 0 16px; }
+    .Projects .cards {
+      flex-direction: column; }
+      .Projects .cards .ProjectCard {
+        width: calc(100% - 16px - 16px) !important;
+        height: auto !important; }
+        .Projects .cards .ProjectCard .gif-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .Projects .cards .ProjectCard .gif-container .gif {
+            border-radius: 8px 8px 0 0;
+            max-width: calc(100% - 16px - 16px); }
+        .Projects .cards .ProjectCard .main .thumbnail-box {
+          height: 33%;
+          width: 100%; }
+          .Projects .cards .ProjectCard .main .thumbnail-box .thumbnail {
+            max-height: 128px;
+            padding: 32px 0 32px 0; }
+        .Projects .cards .ProjectCard .main .content {
+          height: 67%;
+          width: 100%; } }

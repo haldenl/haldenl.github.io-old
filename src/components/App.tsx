@@ -48,7 +48,7 @@ export default class App extends React.Component<any, any> {
             <div className="header" ref="header">
               <Title />
               <Intro />
-              <div ref="quicklinks" style={{color: '#4c88ce'}}>
+              <div className="quick-links" ref="quicklinks" style={{color: '#4c88ce'}}>
                 <QuickLinks/>
               </div>
             </div>

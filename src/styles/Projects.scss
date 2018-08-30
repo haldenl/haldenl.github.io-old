@@ -1,7 +1,7 @@
 @import 'base.scss';
 
 .Projects {
-  width: 960px;
+  width: $app-width;
 
   .title {
     padding: 32px 20px 8px 20px;
@@ -148,6 +148,53 @@
           .resource-icon {
             margin: 8px 8px 8px 8px;
             max-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+  .Projects {
+    width: $mobile-app-width;
+    padding: $mobile-app-padding;
+
+    .cards {
+      flex-direction: column;
+
+      .ProjectCard {
+        width: $mobile-app-width !important;
+        height: auto !important;
+
+        .gif-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .gif {
+            border-radius: 8px 8px 0 0;
+            max-width: $mobile-app-width;
+            // border-bottom: 1px solid rgb(218, 218, 218);
+          }
+        }
+
+        .main {
+          .thumbnail-box {
+            height: 33%;
+            width: 100%;
+
+            .thumbnail {
+              max-height: 128px;
+              padding: 32px 0 32px 0;
+            }
+          }
+
+          .content {
+            height: 67%;
+            width: 100%;
           }
         }
       }
