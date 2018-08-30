@@ -7,7 +7,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "rm -rf dist/ && npm-run-all build-css build-js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b master"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",

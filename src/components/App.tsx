@@ -40,8 +40,6 @@ export default class App extends React.Component<any, any> {
 
 
   render() {
-    console.log(this.state.currentSection)
-
     return (
       <StickyContainer>
       <div className="App" id="app">
@@ -75,7 +73,6 @@ export default class App extends React.Component<any, any> {
                     }
                     
                     if (this.refs.quicklinks) {
-                      console.log(this.quickLinksFontColorScale(fontPoint));
                       // @ts-ignore
                       this.refs.quicklinks.style.color = this.quickLinksFontColorScale(fontPoint);
                     }

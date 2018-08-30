@@ -49,9 +49,10 @@ module.exports = {
       favicon: "./images/favicon.ico"
     }),
     new CopyWebpackPlugin([
-      { from: './shareables/**', to: './shareables/' },
-      { from: './papers/**', to: './papers/'},
-      { from: './gifs/**', to: './static/' }
+      { from: './shareables/**', to: './' },
+      { from: './papers/**', to: './'},
+      { from: './gifs/**', to: './static/' },
+      { from: './CNAME', to: './' }
     ])
   ]
 };
