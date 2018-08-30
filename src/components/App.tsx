@@ -19,6 +19,7 @@ export default class App extends React.Component<any, any> {
   quickLinksFontColorScale: any;
   headerFontColorScale: any;
   height: number;
+  headerHeight: number;
 
   constructor(props: any) {
     super(props)
@@ -32,12 +33,20 @@ export default class App extends React.Component<any, any> {
     this.state = {
       currentSection: 'Header'
     }
+
+    this.handleResize = this.handleResize.bind(this);
   }
 
   componentDidMount() {
     this.height = document.getElementById('app').clientHeight;
+    this.headerHeight = document.getElementById('header').clientHeight;
+
+    window.addEventListener('resize', this.handleResize)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
 
   render() {
     return (
@@ -45,7 +54,7 @@ export default class App extends React.Component<any, any> {
       <div className="App" id="app">
         <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'Header'})}>
           <div className="wrapper">
-            <div className="header" ref="header">
+            <div className="header" id="header" ref="header">
               <Title />
               <Intro />
               <div className="quick-links" ref="quicklinks" style={{color: '#4c88ce'}}>
@@ -53,7 +62,7 @@ export default class App extends React.Component<any, any> {
               </div>
             </div>
             <div ref="navbarcontainer" style={{width: "100%"}}>
-              <Sticky topOffset={290}>
+              <Sticky topOffset={this.headerHeight}>
                 {
                   ({style, isSticky, distanceFromTop, distanceFromBottom}) => {
                     const backgroundPoint = getHeaderScale(distanceFromTop)
@@ -110,6 +119,10 @@ export default class App extends React.Component<any, any> {
       </div>
       </StickyContainer>
     )
+  }
+
+  handleResize() {
+    this.headerHeight = document.getElementById('header').clientHeight;
   }
 }
 
