@@ -36,7 +36,7 @@ export default class Projects extends React.Component {
         website: 'https://uwdata.github.io/draco-editor/#/editor',
         code: 'https://github.com/uwdata/draco-editor'
       },
-      technologies: "React, Vega-Lite, Typescript, HTML, CSS",
+      technologies: "React, Vega-Lite, Typescript, HTML, SCSS",
       width: 452,
       height: 480
     },
