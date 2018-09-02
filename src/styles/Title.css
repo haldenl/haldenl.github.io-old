@@ -15,4 +15,5 @@
   .Title {
     width: calc(100% - 16px - 16px);
     padding: 0 16px 0 16px;
+    justify-content: center;
     height: auto; } }
