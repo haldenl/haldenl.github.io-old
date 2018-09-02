@@ -44,7 +44,7 @@ export default class Experience extends React.Component {
       role: "UX Engineering Intern",
       team: "Search",
       time: "Summer 2017",
-      tidbit: "Full-stack design and development of a web application (chrome extension), including accompanying server and API, hosted on Google infrastructure.",
+      tidbit: "Full-stack design (UX and software) and development of a web application (chrome extension), including accompanying server and API, hosted on Google infrastructure.",
       technologies: "Java, Javascript, HTML, CSS"
     },
     {
@@ -64,7 +64,7 @@ export default class Experience extends React.Component {
       role: "Teaching Assistant",
       team: "CSE 142, 143, 311, 512",
       time: "2016 - 2018",
-      tidbit: "Held office hours, grade assignments, and lead tutorials or discussion for Intro to Programming (undergrad), Foundations in Computing (undergrad), and Data Visualization (grad).",
+      tidbit: "Held office hours, grade assignments, and led tutorials or discussion for Intro to Programming (undergrad), Foundations in Computing (undergrad), and Data Visualization (grad).",
       technologies: "Java, Javascript"
 
     },
