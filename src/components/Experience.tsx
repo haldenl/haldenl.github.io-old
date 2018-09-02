@@ -34,7 +34,8 @@ export default class Experience extends React.Component {
       role: "Software Engineering Intern",
       team: "Archival",
       time: "Summer 2018",
-      tidbit: "Designed and implemented tiered lifecycle management for data backed up to the cloud. Additionally, extended customer UI to enable access to this feature."
+      tidbit: "Designed and implemented tiered lifecycle management for data backed up to the cloud. Additionally, extended customer UI to enable access to this feature.",
+      technologies: "Scala, Typescript, Angular"
     },
     {
       companyName: "Google",
@@ -43,7 +44,8 @@ export default class Experience extends React.Component {
       role: "UX Engineering Intern",
       team: "Search",
       time: "Summer 2017",
-      tidbit: "Full-stack design and development of a web application (chrome extension), including accompanying server and API, hosted on Google infrastructure."
+      tidbit: "Full-stack design and development of a web application (chrome extension), including accompanying server and API, hosted on Google infrastructure.",
+      technologies: "Java, Javascript, HTML, CSS"
     },
     {
       companyName: "Paul G. Allen School",
@@ -52,7 +54,8 @@ export default class Experience extends React.Component {
       role: "Research Assistant",
       team: "Interactive Data Lab",
       time: "2017, 2018",
-      tidbit: "Visualization Recommendation Systems (Voyager / CompassQL, Draco) and visualization for Natural Language Processing."
+      tidbit: "Visualization Recommendation Systems (Voyager / CompassQL, Draco) and visualization for Natural Language Processing.",
+      technologies: "Typescript, React, Vega-Lite, Python, HTML, SCSS"
     },
     {
       companyName: "Paul G. Allen School",
@@ -61,7 +64,9 @@ export default class Experience extends React.Component {
       role: "Teaching Assistant",
       team: "CSE 142, 143, 311, 512",
       time: "2016, 2017, 2018",
-      tidbit: "Held office hours, grade assignments, and lead tutorials or discussion for Intro to Programming (undergrad), Foundations in Computing (undergrad), and Data Visualization (grad)."
+      tidbit: "Held office hours, grade assignments, and lead tutorials or discussion for Intro to Programming (undergrad), Foundations in Computing (undergrad), and Data Visualization (grad).",
+      technologies: "Java, Javascript"
+
     },
     {
       companyName: "Paul G. Allen School",
@@ -70,7 +75,8 @@ export default class Experience extends React.Component {
       role: "Software Developer",
       team: "TA Tools",
       time: "2016, 2017, 2018",
-      tidbit: "Full-stack development of the Intro TA Tools website, used to facilitate operation of CSE 142 and 143 courses"
+      tidbit: "Full-stack development of the Intro TA Tools website, used to facilitate operation of CSE 142 and 143 courses",
+      technologies: "Java, Coffeescript / Javascript, HTML, SCSS"
     }
   ]
 }
@@ -83,6 +89,7 @@ interface ExperienceCardProps {
   team: string;
   time: string;
   tidbit: string;
+  technologies: string;
 }
 
 interface ExperienceCardState {
@@ -122,6 +129,7 @@ class ExperienceCard extends React.Component<ExperienceCardProps, ExperienceCard
             <div><i>{this.props.time}</i></div>
             <br/>
             <div>{this.props.tidbit}</div>
+            <div className="technologies">{this.props.technologies}</div>
           </div>
         </div>
       </div>
