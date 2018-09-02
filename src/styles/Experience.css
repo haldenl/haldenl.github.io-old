@@ -44,6 +44,7 @@
       flex-direction: column; }
       .Experience .cards .ExperienceCard .card {
         width: calc(100% - 16px - 16px) !important;
+        max-width: 600px !important;
         height: auto !important; }
         .Experience .cards .ExperienceCard .card .text {
           padding: 16px; } }

@@ -114,6 +114,7 @@
       flex-direction: column; }
       .Publications .cards .PublicationCard {
         width: calc(100% - 16px - 16px) !important;
+        max-width: 600px !important;
         height: auto !important; }
         .Publications .cards .PublicationCard.compressed {
           flex-direction: column; }

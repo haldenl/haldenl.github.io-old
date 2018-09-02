@@ -34,7 +34,8 @@
           .Projects .cards .ProjectCard.compressed .resources .resource {
             height: 64px; }
       .Projects .cards .ProjectCard .gif {
-        border-radius: 8px 8px 0 0; }
+        border-radius: 8px 8px 0 0;
+        max-width: 100%; }
       .Projects .cards .ProjectCard .main {
         display: flex;
         flex-direction: column;
@@ -107,6 +108,7 @@
       flex-direction: column; }
       .Projects .cards .ProjectCard {
         width: calc(100% - 16px - 16px) !important;
+        max-width: 600px !important;
         height: auto !important; }
         .Projects .cards .ProjectCard .gif-container {
           width: 100%;
@@ -115,13 +117,10 @@
           align-items: center; }
           .Projects .cards .ProjectCard .gif-container .gif {
             border-radius: 8px 8px 0 0;
-            max-width: calc(100% - 16px - 16px); }
+            height: auto; }
         .Projects .cards .ProjectCard .main .thumbnail-box {
-          height: 33%;
           width: 100%; }
           .Projects .cards .ProjectCard .main .thumbnail-box .thumbnail {
-            max-height: 128px;
             padding: 32px 0 32px 0; }
         .Projects .cards .ProjectCard .main .content {
-          height: 67%;
           width: 100%; } }

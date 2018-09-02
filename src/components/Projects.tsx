@@ -83,7 +83,7 @@ class ProjectCard extends React.Component<ProjectCardProps, any> {
         <div className="main">
           { this.props.gif ?
             <div className="gif-container">
-              <img className="gif" src={this.props.gif} style={{width: this.props.width}}/>
+              <img className="gif" src={this.props.gif} />
             </div>
             :
             null 

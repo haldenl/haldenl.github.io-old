@@ -53,6 +53,7 @@
 
       .gif {
         border-radius: 8px 8px 0 0;
+        max-width: 100%;
         // border-bottom: 1px solid rgb(218, 218, 218);
       }
 
@@ -166,6 +167,7 @@
 
       .ProjectCard {
         width: $mobile-app-width !important;
+        max-width: $mobile-app-card-max-width !important;
         height: auto !important;
 
         .gif-container {
@@ -176,24 +178,20 @@
 
           .gif {
             border-radius: 8px 8px 0 0;
-            max-width: $mobile-app-width;
-            // border-bottom: 1px solid rgb(218, 218, 218);
+            height: auto;
           }
         }
 
         .main {
           .thumbnail-box {
-            height: 33%;
             width: 100%;
 
             .thumbnail {
-              max-height: 128px;
               padding: 32px 0 32px 0;
             }
           }
 
           .content {
-            height: 67%;
             width: 100%;
           }
         }

@@ -173,6 +173,7 @@
 
       .PublicationCard {
         width: $mobile-app-width !important;
+        max-width: $mobile-app-card-max-width !important;
         height: auto !important;
 
         &.compressed {
