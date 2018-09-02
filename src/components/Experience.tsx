@@ -53,7 +53,7 @@ export default class Experience extends React.Component {
       logoSize: 140,
       role: "Research Assistant",
       team: "Interactive Data Lab",
-      time: "2017, 2018",
+      time: "2017 - 2018",
       tidbit: "Visualization Recommendation Systems (Voyager / CompassQL, Draco) and visualization for Natural Language Processing.",
       technologies: "Typescript, React, Vega-Lite, Python, HTML, SCSS"
     },
@@ -63,7 +63,7 @@ export default class Experience extends React.Component {
       logoSize: 140,
       role: "Teaching Assistant",
       team: "CSE 142, 143, 311, 512",
-      time: "2016, 2017, 2018",
+      time: "2016 - 2018",
       tidbit: "Held office hours, grade assignments, and lead tutorials or discussion for Intro to Programming (undergrad), Foundations in Computing (undergrad), and Data Visualization (grad).",
       technologies: "Java, Javascript"
 
@@ -74,7 +74,7 @@ export default class Experience extends React.Component {
       logoSize: 140,
       role: "Software Developer",
       team: "TA Tools",
-      time: "2016, 2017, 2018",
+      time: "2016 - 2018",
       tidbit: "Full-stack development of the Intro TA Tools website, used to facilitate operation of CSE 142 and 143 courses",
       technologies: "Java, Coffeescript / Javascript, HTML, SCSS"
     }
