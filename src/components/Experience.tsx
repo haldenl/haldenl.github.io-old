@@ -54,7 +54,7 @@ export default class Experience extends React.Component {
       role: "Research Assistant",
       team: "Interactive Data Lab",
       time: "2017 - 2018",
-      tidbit: "Visualization Recommendation Systems (Voyager / CompassQL, Draco) and visualization for Natural Language Processing.",
+      tidbit: "Visualization Recommendation Systems (Draco, Voyager / CompassQL) and visualization for Natural Language Processing.",
       technologies: "Typescript, React, Vega-Lite, Python, HTML, SCSS"
     },
     {
