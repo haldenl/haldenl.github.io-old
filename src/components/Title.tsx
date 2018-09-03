@@ -15,7 +15,7 @@ export default class Title extends React.Component {
               <Typist.Delay ms={1000} />
               <span>Hi,</span>
               <Typist.Delay ms={250} />
-              <span> I'm Halden Lin.</span>
+              <span> I'm Halden Lin</span>
             </h1>
           {/* </Typist> */}
         </div>
