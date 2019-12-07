@@ -29,7 +29,7 @@ export default class Projects extends React.Component {
     {
       gif: './static/gifs/draco-editor.gif',
       name: "Draco-Editor",
-      subtitle: "[WIP] A web-based visualization recommendation editor",
+      subtitle: "A web-based visualization recommendation editor",
       type: "Web Application",
       tidbit: "An online editor for Draco. The Draco system + WASM compiled Clingo solver work to provide a visualization recommendation editor. See the Draco paper for more information about the system itself.",
       links: {

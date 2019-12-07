@@ -5,6 +5,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import * as rubrikLogo from '../../images/rubrik_logo.png';
 import * as googleLogo from '../../images/google_logo.svg';
 import * as allenLogo from '../../images/allen_logo.png';
+import * as appleLogo from '../../images/apple_logo.svg';
 
 import '../styles/Experience.css';
 
@@ -28,14 +29,28 @@ export default class Experience extends React.Component {
 
   static ExperienceInfo: ExperienceCardProps[] = [
     {
+      companyName: "Apple",
+      companyLogo: appleLogo,
+      logoSize: 24,
+      role: "Research Engineer",
+      team: "Visualization & Machine Learning",
+      time: "2019 - Present"
+    },
+    {
+      companyName: "Paul G. Allen School",
+      companyLogo: allenLogo,
+      logoSize: 140,
+      role: "Research Assistant",
+      team: "Interactive Data Lab",
+      time: "2017 - 2019",
+    },
+    {
       companyName: "Rubrik, Inc.",
       companyLogo: rubrikLogo,
       logoSize: 56,
       role: "Software Engineering Intern",
       team: "Archival",
       time: "Summer 2018",
-      tidbit: "Designed and implemented tiered lifecycle management for data backed up to the cloud. Additionally, extended customer UI to enable access to this feature.",
-      technologies: "Scala, Typescript, Angular"
     },
     {
       companyName: "Google",
@@ -44,40 +59,15 @@ export default class Experience extends React.Component {
       role: "UX Engineering Intern",
       team: "Search",
       time: "Summer 2017",
-      tidbit: "Full-stack design (UX and software) and development of a web application (chrome extension), including accompanying server and API, hosted on Google production infrastructure.",
-      technologies: "Java, Javascript, HTML, CSS"
-    },
-    {
-      companyName: "Paul G. Allen School",
-      companyLogo: allenLogo,
-      logoSize: 140,
-      role: "Research Assistant",
-      team: "Interactive Data Lab",
-      time: "2017 - 2018",
-      tidbit: "Visualization Recommendation Systems (Draco, Voyager / CompassQL) and visualization for Natural Language Processing.",
-      technologies: "Typescript, React, Vega-Lite, Python, HTML, SCSS"
     },
     {
       companyName: "Paul G. Allen School",
       companyLogo: allenLogo,
       logoSize: 140,
       role: "Teaching Assistant",
-      team: "CSE 142, 143, 311, 512",
-      time: "2016 - 2018",
-      tidbit: "Held office hours, grade assignments, and led tutorials or discussion for Intro to Programming (undergrad), Foundations in Computing (undergrad), and Data Visualization (grad).",
-      technologies: "Java, Javascript"
-
+      team: "CSE 142, 143, 311, 442, 512",
+      time: "2016 - 2019",
     },
-    {
-      companyName: "Paul G. Allen School",
-      companyLogo: allenLogo,
-      logoSize: 140,
-      role: "Software Developer",
-      team: "TA Tools",
-      time: "2016 - 2018",
-      tidbit: "Full-stack development of the Intro TA Tools website, used to facilitate operation of CSE 142 and 143 courses",
-      technologies: "Java, Coffeescript / Javascript, HTML, SCSS"
-    }
   ]
 }
 
@@ -88,8 +78,6 @@ interface ExperienceCardProps {
   role: string;
   team: string;
   time: string;
-  tidbit: string;
-  technologies: string;
 }
 
 interface ExperienceCardState {
@@ -127,9 +115,6 @@ class ExperienceCard extends React.Component<ExperienceCardProps, ExperienceCard
             <div className="regular-weight">{this.props.role}</div>
             <div>{this.props.team}</div>
             <div><i>{this.props.time}</i></div>
-            <br/>
-            <div>{this.props.tidbit}</div>
-            <div className="technologies">{this.props.technologies}</div>
           </div>
         </div>
       </div>
