@@ -44,7 +44,8 @@
           align-items: center; }
           .Publications .cards .PublicationCard .main .thumbnail-box .thumbnail {
             max-width: calc(100% - 16px - 16px);
-            padding: 0 16px 0 16px; }
+            padding: 0 16px 0 16px;
+            max-height: calc(100% - 16px - 16px); }
         .Publications .cards .PublicationCard .main .content {
           height: 100%;
           width: 67%;

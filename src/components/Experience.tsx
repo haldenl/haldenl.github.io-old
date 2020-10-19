@@ -33,7 +33,7 @@ export default class Experience extends React.Component {
       companyLogo: appleLogo,
       logoSize: 24,
       role: "Research Engineer",
-      team: "Visualization & Machine Learning",
+      team: "Visualization",
       time: "2019 - Present"
     },
     {

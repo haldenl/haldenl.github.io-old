@@ -10,6 +10,7 @@ import * as codeIcon from '../../images/code_icon.svg';
 
 import * as attentionThumbnail from '../../images/attention_thumbnail.png';
 import * as dracoThumbnail from '../../images/draco.svg';
+import * as dzibanThumbnail from '../../images/dziban.png';
 
 export default class Publications extends React.Component {
   static Name = "Halden Lin"
@@ -32,6 +33,22 @@ export default class Publications extends React.Component {
   }
 
   static PublicationsInfo: PublicationCardProps[] = [
+    {
+      name: "Dziban",
+      title: "Dziban: Balancing Agency & Automation in Visualization Design via Anchored Recommendations",
+      type: "Full Paper",
+      conference: "CHI 2020",
+      authors: ["Halden Lin", "Dominik Moritz", "Jeffrey Heer"],
+      tidbit: "Guided recommendations to increase control and ease of use of automated design tools.",
+      thumbnail: dzibanThumbnail,
+      links: {
+        pdf: 'http://idl.cs.washington.edu/papers/dziban',
+        code: 'https://github.com/uwdata/dziban'
+      },
+      width: 960,
+      height: 220,
+      cardType: "normal"
+    },
     {
       name: "Draco",
       title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco",
