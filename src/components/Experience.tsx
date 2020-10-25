@@ -106,16 +106,14 @@ class ExperienceCard extends React.Component<ExperienceCardProps, ExperienceCard
 
         onClick={this.toggleDetail}
       >
-        <div className="card">
-          <div className="logo-box">
-            <img className="logo" style={{maxWidth: this.props.logoSize}} src={this.props.companyLogo}/>
-          </div>
-          <div className="text">
-            <div><b>{this.props.companyName}</b></div>
-            <div className="regular-weight">{this.props.role}</div>
-            <div>{this.props.team}</div>
-            <div><i>{this.props.time}</i></div>
-          </div>
+        <div className="logo-box">
+          <img className="logo" style={{maxWidth: this.props.logoSize}} src={this.props.companyLogo}/>
+        </div>
+        <div className="text">
+          <div><b>{this.props.companyName}</b></div>
+          <div className="regular-weight">{this.props.role}</div>
+          <div>{this.props.team}</div>
+          <div><i>{this.props.time}</i></div>
         </div>
       </div>
     )

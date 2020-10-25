@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    .Experience .cards .ExperienceCard .card {
+    .Experience .cards .ExperienceCard {
       position: relative;
       margin: 11px;
       width: 168px;
@@ -23,19 +23,19 @@
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .Experience .cards .ExperienceCard .card .logo-box {
+      .Experience .cards .ExperienceCard .logo-box {
         height: 64px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center; }
-      .Experience .cards .ExperienceCard .card .text {
+      .Experience .cards .ExperienceCard .text {
         width: 100%;
         box-sizing: border-box;
         padding: 8px;
         font-size: 13px;
         line-height: 1.3em; }
-        .Experience .cards .ExperienceCard .card .text .technologies {
+        .Experience .cards .ExperienceCard .text .technologies {
           margin-top: 8px;
           font-style: italic; }
 
@@ -45,9 +45,9 @@
     padding: 0 16px 0 16px; }
     .Experience .cards {
       flex-direction: column; }
-      .Experience .cards .ExperienceCard .card {
+      .Experience .cards .ExperienceCard {
         width: calc(100% - 16px - 16px) !important;
         max-width: 600px !important;
         height: auto !important; }
-        .Experience .cards .ExperienceCard .card .text {
+        .Experience .cards .ExperienceCard .text {
           padding: 16px; } }

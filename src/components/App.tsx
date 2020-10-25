@@ -115,18 +115,19 @@ export default class App extends React.Component<any, any> {
         </Waypoint>
         <div className="waypoint-fix"/>
         { this.state.width < App.MobileAppWidth ?
-           <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'experience'})}>
-            <div><Experience /></div>
-          </Waypoint>
+            <Waypoint topOffset={51} bottomOffset={window.innerHeight - 52} onEnter={() => this.setState({currentSection: 'experience'})}>
+              <div><Experience /></div>
+            </Waypoint>
           :
-          <div>
             <div><Experience /></div>
-            <Waypoint
-              topOffset={window.innerHeight - 1}
-              bottomOffset={0}
-              onEnter={() => this.setState({currentSection: 'experience'})}
-              onLeave={() => this.setState({currentSection: 'projects'})}/>
-          </div>
+        }
+        {
+          this.state.width < App.MobileAppWidth ? null :
+          <Waypoint
+            topOffset={window.innerHeight - 1}
+            bottomOffset={0}
+            onEnter={() => this.setState({currentSection: 'experience'})}
+            onLeave={() => this.setState({currentSection: 'projects'})}/>
         }
       </div>
       </StickyContainer>

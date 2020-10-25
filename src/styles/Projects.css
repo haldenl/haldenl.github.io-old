@@ -20,7 +20,8 @@
       border-radius: 8px;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      justify-content: space-between; }
       .Projects .cards .ProjectCard.compressed {
         flex-direction: row; }
         .Projects .cards .ProjectCard.compressed .main {
@@ -56,6 +57,10 @@
           .Projects .cards .ProjectCard .main .content .subtitle {
             font-weight: 400;
             font-size: 13px;
+            margin-bottom: 16px; }
+          .Projects .cards .ProjectCard .main .content .authors {
+            font-weight: 300;
+            font-size: 11px;
             margin-bottom: 16px; }
           .Projects .cards .ProjectCard .main .content .type {
             font-weight: 300;
