@@ -33,7 +33,7 @@ export default class Projects extends React.Component {
       name: 'The Hidden Cost of Digital Consumption',
       subtitle: "Parametric Press: Issue 02",
       authors: ["Halden Lin", "Aishwarya Nirmal", "Shobhit Hathi", "Lilian Liang"],
-      type: "Interactive Web Article",
+      type: "Interactive Web Article, October 2020",
       tidbit: "How does information get to your screen, and at what environmental cost?",
       links: {
         website: 'https://parametric.press/issue-02/streaming',
@@ -47,7 +47,7 @@ export default class Projects extends React.Component {
       gif: './static/gifs/draco-editor.gif',
       name: "Draco-Editor",
       subtitle: "A web-based visualization recommendation editor",
-      type: "Web Application",
+      type: "Web Application, June 2018",
       authors: ["Halden Lin", "Dominik Moritz"],
       tidbit: "An online editor for Draco. The Draco system + WASM compiled Clingo solver work to provide a visualization recommendation editor. See the Draco paper for more information about the system itself.",
       links: {
@@ -63,7 +63,7 @@ export default class Projects extends React.Component {
       name: "Change In Times",
       subtitle: "An interactive exploration of Seattle's economic landscape",
       authors: ["Halden Lin", "Shobhit Hathi", "Lilian Liang", "Gunnar Olson"],
-      type: "Interactive Web Article",
+      type: "Interactive Web Article, June 2017",
       award: "Best Explanatory Project, CSE 442 Spring 2017",
       tidbit: "A series of interactive data visualizations that explore business and housing data in Seattle between 2010 and 2016, sourced from The City of Seattle, Zillow, and Redfin.",
       links: {
